@@ -27,6 +27,12 @@ release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 
+
+# The document name of the “root” document, that is, the document that contains
+# the root toctree directive. Default is 'index'.
+
+root_doc= "airr-community-terminology"
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -53,3 +59,22 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+# -- Options for LaTeX output ------------------------------------------------
+
+# Unlike the HTML builders, the latex builder does not benefit from prepared
+# themes. The Options for LaTeX output, and particularly the ``latex_elements``
+# variable, provides much of the interface for customization:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#latex-options
+# https://www.sphinx-doc.org/en/master/latex.html#latex-elements-confval
+#
+
+latex_engine = 'pdflatex'
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '11pt',
+    'fontenc': '\\usepackage[LGR,T1]{fontenc}'
+}
+latex_show_urls = 'footnote'
+
