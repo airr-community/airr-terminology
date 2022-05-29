@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'AIRR Community Terminology'
-copyright = '2022, Christian Busse, Chaim Schramm, Victor Greiff, Susanna Marquez, Ulrik Stervbo'
-author = 'Christian Busse, Chaim Schramm, Victor Greiff, Susanna Marquez, Ulrik Stervbo'
+copyright = '2021-2022, The AIRR Community'
+author = 'The AIRR Community'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
