@@ -1,4 +1,4 @@
-name: Sphinx
+name: AIRR Terminology compile and deploy
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   sphinx:
+    name: Run Sphinx
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +22,26 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run make
         run: |
-          ls -l
-          tree
           make html
           make latexpdf
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: document-compiled-pdf
+          path: _build/latex/airrcommunityterminology.pdf
+  zenodo:
+    name: Upload to Zenodo
+    needs: sphinx
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download compiled PDF
+        uses: actions/download-artifact@v3
+        with:
+          name: document-compiled-pdf
+      - name: Deploy on Zenodo
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_SANDBOX_BUSSEC }}
+        run: |
+          python zenodo_upload.py
+

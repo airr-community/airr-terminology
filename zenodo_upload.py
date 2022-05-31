@@ -6,7 +6,7 @@ config = {
     'zenodo_token': os.environ['ZENODO_TOKEN'],
     'zenodo_host': 'sandbox.zenodo.org',
     'original_record_id': 1066300,
-    'filename_pdf': 'airr-community-terminology.pdf'
+    'filename_pdf': 'airrcommunityterminology.pdf'
 }
 
 original_record_url = 'https://' + config['zenodo_host'] + '/api/records/' + str(config['original_record_id'])
