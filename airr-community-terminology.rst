@@ -7,41 +7,11 @@ AIRR Community Terminology
    :caption: Contents:
 
 
-Indices and tables
-==================
+Definitions
+===========
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-Abbreviations - IT
-------------------
-
-*  API: Application Programming Interface
-*  HTTP: Hypertext Transfer Protocol
-*  JSON: JavaScript Object Notation
-*  REST: Representational State Transfer
-*  TSV: Tab Separated Values
-*  URL: Universal Resource Locator
-*  YAML: YAML Ain't Markup Language
-
-
-Abbreviations - other
----------------------
-
-*  CAIRR: CEDAR AIRR
-*  CEDAR: Center for Expanded Data Annotation and Retrieval
-*  FAIR: The acronym for "Findable, Accessible, Interoperable,
-   Reusable", a set of principles to facilitate the reuse of research
-   data, defined by Wilkinson et al. (2016).
-*  TAbS: The Antibody Society is an international, non-profit
-   association representing individuals and organizations involved in
-   antibody-related research and development.
-
-
-Definitions - AIRR Community
-----------------------------
+AIRR Community
+--------------
 
 *  Adaptive Immune Receptor Repertoire (AIRR) [restricted]_: A
    collection of vertebrate immune receptors whose loci typically
@@ -122,8 +92,8 @@ Definitions - AIRR Community
    considered as a Participant.
 
 
-Definitions - Biology
----------------------
+Biology
+-------
 
 *  Antibody (Ab): A soluble protein consisting of *n* Ig heavy / Ig
    light heterotetramers (with *n* typically being 1, 2 or 5, depending
@@ -168,8 +138,8 @@ Definitions - Biology
    TRD loci also include diversity (D) genes.
 
 
-Definitions - mixed (Bio/IT)
-----------------------------
+mixed (Bio/IT)
+--------------
 
 *  Clone: Multiple definitions:
 
@@ -192,6 +162,34 @@ Definitions - mixed (Bio/IT)
    2. [data] The representation of a biological rearrangement, which is
       obtained through sequencing and annotated with features, such as
       gene calls, from data processing.
+
+
+Abbreviations
+=============
+
+IT-related
+----------
+
+*  API: Application Programming Interface
+*  HTTP: Hypertext Transfer Protocol
+*  JSON: JavaScript Object Notation
+*  REST: Representational State Transfer
+*  TSV: Tab Separated Values
+*  URL: Universal Resource Locator
+*  YAML: YAML Ain't Markup Language
+
+
+other
+------
+
+*  CAIRR: CEDAR AIRR
+*  CEDAR: Center for Expanded Data Annotation and Retrieval
+*  FAIR: The acronym for "Findable, Accessible, Interoperable,
+   Reusable", a set of principles to facilitate the reuse of research
+   data, defined by Wilkinson et al. (2016).
+*  TAbS: The Antibody Society is an international, non-profit
+   association representing individuals and organizations involved in
+   antibody-related research and development.
 
 
 Footnotes
