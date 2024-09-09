@@ -11,7 +11,7 @@ jobs:
     name: Run Sphinx
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install LaTex and packages
         run: |
           sudo apt install latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-lang-greek tex-gyre
@@ -34,7 +34,7 @@ jobs:
     needs: sphinx
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Download compiled PDF
         uses: actions/download-artifact@v4
         with:
