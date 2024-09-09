@@ -25,7 +25,7 @@ jobs:
           make html
           make latexpdf
       - name: Upload compiled PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: document-compiled-pdf
           path: _build/latex/airrcommunityterminology.pdf
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download compiled PDF
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: document-compiled-pdf
       - name: Deploy on Zenodo
